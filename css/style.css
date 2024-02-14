@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D0D0D;
+  overflow: hidden;
+}
+
+
+.lazy-loading,.inner-lazy-loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 9999;
+}
+
+.side-nav-menu {
+    z-index: 99;
+  /* transition: all 1s ease-in-out ; */
+}
+.side-nav-menu .nav-tap {
+  padding: 24px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  /* display: flex;
+    position: fixed;
+    left: 0; */
+
+  /* transform: translateX(-100%); */
+  /* transition: 2s; */
+}
+.side-nav-menu .nav-tap .links {
+  line-height: 40px;
+  cursor: pointer;
+}
+.nav-header {
+  padding: 24px 8px;
+  background-color: white;
+  /* border: 1px solid ; */
+}
+.nav-header img {
+  width: 50px;
+}
+
+.nav-header i {
+  cursor: pointer;
+}
+
+.links ul li {
+  position: relative;
+  /* top: 300px; */
+}
+
+.meal,.category img{
+    cursor: pointer;
+}
+.meal-layer{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: 0.5s;
+    opacity: 0;
+    padding: 10px;
+    /* font-size: 24px; */
+}
+
+.meal:hover .meal-layer{
+    opacity: 75%;
+    transform: translateY(0);
+
+}
+.category:hover .meal-layer{
+    opacity: 75%;
+    transform: translateY(0);
+
+}
+
+
+::placeholder{
+    color: gray !important;
+}
+
+
+/* .areas .row ul i,h3 {
+  cursor: pointer;  
+}
+
+.ingredient-container p{
+  cursor: pointer;
+} */
+
+i,p{
+  cursor: pointer;
+}
+
+
+
